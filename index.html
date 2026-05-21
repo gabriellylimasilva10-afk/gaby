@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroViolet - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-seedling"></i>
+                <h1>Agro<span>Violet</span></h1>
+            </div>
+            <p>Monitoramento de Fazenda Vertical • Concurso Agrinho</p>
+        </header>
+
+        <main class="dashboard-grid">
+            
+            <div class="card status-card">
+                <i class="fa-solid fa-lightbulb icon-led"></i>
+                <h3>Grow Lights (LED)</h3>
+                <p id="led-status" class="status-text state-on">LIGADO</p>
+                <button id="toggle-led" class="btn-primary">Alternar Estado</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-temperature-high icon-purple"></i>
+                <h3>Temperatura</h3>
+                <p class="sensor-value"><span id="temp-val">24.5</span>°C</p>
+                <span class="sensor-info">Ideal: 22°C - 26°C</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-droplet icon-purple"></i>
+                <h3>Umidade do Ar</h3>
+                <p class="sensor-value"><span id="umi-val">65</span>%</p>
+                <span class="sensor-info">Ideal: 60% - 70%</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wind icon-purple"></i>
+                <h3>Nível de CO2</h3>
+                <p class="sensor-value"><span id="co2-val">820</span> ppm</p>
+                <span class="sensor-info">Status: Excelente</span>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>AgroViolet © 2026 — Tecnologia a serviço do campo 💜</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
